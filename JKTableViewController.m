@@ -60,11 +60,11 @@
     else if (section == 1){
         return 1;
     }
-    else if (section == 2){
+    else {
         return 3;
         
     }
-    return 0;
+
 }
 
 
@@ -84,12 +84,10 @@
         cell.backgroundColor = [UIColor blueColor];
         
     }
-    else if (indexPath.section == 2) {
+    else {
 
         cell.textLabel.text = [NSString stringWithFormat:@"Cell %i", indexPath.row];
-        cell.backgroundColor = [UIColor yellowColor];    
-
-        
+        cell.backgroundColor = [UIColor yellowColor];
     }
     
     
